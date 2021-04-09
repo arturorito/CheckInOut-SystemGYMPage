@@ -1,42 +1,31 @@
 {
-  "name": "mern",
-  "version": "1.0.0",
-  "description": "",
-  "main": "server.js",
-  "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
-    "start:prod": "node server.js",
-    "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
-    "client": "cd client && npm run start",
-    "seed": "node scripts/seedDB.js",
-    "install": "cd client && npm install",
-    "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build"
+  "name": "node-js-getting-started",
+  "version": "0.3.0",
+  "description": "A sample Node.js app using Express 4",
+  "engines": {
+    "node": "14.x"
   },
-  "author": "",
-  "license": "ISC",
-  "devDependencies": {
-    "concurrently": "^6.0.0",
-    "nodemon": "^1.18.7"
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "node test.js"
   },
   "dependencies": {
-    "axios": "^0.21.1",
-    "bootstrap": "^4.6.0",
-    "bootstrap-icons": "^1.4.1",
-    "env": "^0.0.2",
-    "express": "^4.16.3",
-    "html5-qrcode": "^1.2.4",
-    "if-env": "^1.0.4",
-    "mongoose": "^5.3.16",
-    "parsetimesince": "^2.0.0",
-    "react-bootstrap": "^1.5.2"
+    "ejs": "^3.1.5",
+    "express": "^4.15.2"
+  },
+  "devDependencies": {
+    "got": "^11.3.0",
+    "tape": "^4.7.0"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/arturorito/CheckInOut-SystemGYMPage.git"
+    "url": "https://github.com/heroku/node-js-getting-started"
   },
-  "bugs": {
-    "url": "https://github.com/arturorito/CheckInOut-SystemGYMPage/issues"
-  },
-  "homepage": "https://github.com/arturorito/CheckInOut-SystemGYMPage#readme"
+  "keywords": [
+    "node",
+    "heroku",
+    "express"
+  ],
+  "license": "MIT"
 }
