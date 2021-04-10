@@ -9,7 +9,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Check In || Front MGMT</title>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">        
@@ -387,7 +387,7 @@ $("#scanQR").click(function() {
     $("#scanMatchConfirm").removeClass("text-success");
     //$("#checkInCard").css("width","14rem");
     
-    import html5QrcodeScanner from new Html5QrcodeScanner("reader", { fps: 10, qrbox: 250 }, /* verbose= */ true);
+    let html5QrcodeScanner = new Html5QrcodeScanner("reader", { fps: 10, qrbox: 250 }, /* verbose= */ true);
     function onScanSuccess(scannedMembership) { 
         // handle the scanned code as you like
         console.log(`MembershipID = ${scannedMembership}`);
