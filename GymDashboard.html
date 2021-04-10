@@ -192,7 +192,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title ">General Entrance</h5>
                                     <p class="card-text">Current Capacity: 50</p>
-                                    <p class="card-text">Current Occupancy: 10</p>
+                                    <p id="currentOcc" class="card-text">Current Occupancy: 0</p>
                                     <p class="card-text">
                                         <small class="text-muted">Last updated 3 mins ago</small>
                                     </p>
@@ -209,7 +209,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title ">Cycling Room</h5>
                                     <p class="card-text">Current Capacity: 5</p>
-                                    <p class="card-text">Current Occupancy: 5</p>
+                                    <p class="card-text">Current Occupancy: 0</p>
                                     <p class="card-text">
                                         <small class="text-muted">Last updated 3 mins ago</small>
                                     </p>
@@ -226,7 +226,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title ">Swimming Pool</h5>
                                     <p class="card-text">Current Capacity: 5</p>
-                                    <p class="card-text">Current Occupancy: 5</p>
+                                    <p class="card-text">Current Occupancy: 0</p>
                                     <p class="card-text">
                                         <small class="text-muted">Last updated 3 mins ago</small>
                                     </p>
@@ -243,7 +243,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title ">Weights Room</h5>
                                     <p class="card-text">Current Capacity: 5</p>
-                                    <p class="card-text">Current Occupancy: 5</p>
+                                    <p class="card-text">Current Occupancy: 0</p>
                                     <p class="card-text">
                                         <small class="text-muted">Last updated 3 mins ago</small>
                                     </p>
@@ -260,7 +260,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title ">Aerobics Room</h5>
                                     <p class="card-text">Current Capacity: 5</p>
-                                    <p class="card-text">Current Occupancy: 5</p>
+                                    <p class="card-text">Current Occupancy: 0</p>
                                     <p class="card-text">
                                         <small class="text-muted">Last updated 3 mins ago</small>
                                     </p>
@@ -277,7 +277,7 @@
                                 <div class="card-body">
                                     <h5 class="card-title ">Rest Area</h5>
                                     <p class="card-text">Current Capacity: 5</p>
-                                    <p class="card-text">Current Occupancy: 5</p>
+                                    <p class="card-text">Current Occupancy: 0</p>
                                     <p class="card-text">
                                         <small class="text-muted">Last updated 3 mins ago</small>
                                     </p>
@@ -571,6 +571,8 @@ function currentClientsIn() {
     makeTD3.append(makeButton)
     makeButton.append(makeI)
     newRow.append(makeTR)
+    $("#currentOcc").text("Current Occupancy: " + checkedIn.length);
+
   }
 }
 
@@ -587,6 +589,8 @@ $("#resetAllCheckIn").click(function() {
 $(".checkoutClient").click(function() {
   console.log("you clicked on a button that will one day checkout a client")
 })
+
+
 
 
     </script>
