@@ -387,7 +387,7 @@ $("#scanQR").click(function() {
     $("#scanMatchConfirm").removeClass("text-success");
     //$("#checkInCard").css("width","14rem");
     
-    let html5QrcodeScanner = new Html5QrcodeScanner("reader", { fps: 10, qrbox: 250 }, /* verbose= */ true);
+    const html5QrcodeScanner = new Html5QrcodeScanner("qr");
     function onScanSuccess(scannedMembership) { 
         // handle the scanned code as you like
         console.log(`MembershipID = ${scannedMembership}`);
