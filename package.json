@@ -1,0 +1,25 @@
+{
+  "name": "checkinoutsystem",
+  "version": "1.0.0",
+  "description": "Arturo's part to the group project. Focuses on checking clients in and out",
+  "main": "server.js",
+  "dependencies": {
+    "bootstrap": "^4.6.0",
+    "html5-qrcode": "^1.2.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/arturorito/CheckInOut-SystemGYMPage.git"
+  },
+  "author": "Rito",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/arturorito/CheckInOut-SystemGYMPage/issues"
+  },
+  "homepage": "https://github.com/arturorito/CheckInOut-SystemGYMPage#readme"
+}
